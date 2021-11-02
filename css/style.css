@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .main{
@@ -13,9 +14,12 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 4fr;
+    background: whitesmoke;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
 }
 .nav,.list,.footer, .header-list, .container{
-    border: 1px solid black;
     padding: 10px;
 }
 .container {
@@ -26,19 +30,26 @@
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr;
     grid-template-rows: [y0]2fr [y1]1fr;
-    padding: 10px;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 10px;
+    background: #fafafa;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
 }
 .card-title {
     text-align: center;
     grid-column: x0 / x4;
     grid-row: y0;
-    border: solid 1px black;
 }
 .card-button-add {
     grid-column: x0 / x1;
     grid-row: y1;
+    background: #fafafa;
+    border-style: none;
 }
-.card-button-add {
+.card-button-remove {
     grid-column: x1 / x2;
     grid-row: y1;
+    background: #fafafa;
+    border-style: none;
 }
